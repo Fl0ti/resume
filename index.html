@@ -6,80 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Моё Резюме">
     <meta name="keywords" content="Resume, CV, Резюме">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fonts.css">
+
     <title>Резюме</title>
 </head>
+
 <body>
-    
-    <img src="photo.jpg" alt="Моё ебало" width="200">
-    
-    <h1><strong>Максим Беспалый</strong></h1>
+    <div class="container">
+        <div class="info">
+            
+            <img src="photo.jpg" alt="Моё ебало" width="200" class="avatar">
+            
 
-    <p>Ученик <strong>Result School</strong></p>
-    
-    <p>Я люблю <em>изучать языки, играть в игры, заниматься спортом, изучать что-то новое</em></p>
-
-    <h3>Список социальных сетей:</h3>
-    <a href="https://www.instagram.com/fl0tii/" target="_blank">Instagrtam</a>
-
-    <a href="https://www.twitch.tv/fl0ti" target="_blank">Twitch</a>
-
-
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>Фотография</li>
-        <li>Музыка</li>
-        <li>Игры</li>
-        <li>Путешествия</li>
-    </ol>
-
-    <h2>Учёба</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>Школа</td>
-            <td>Ученик</td>
-            <td>2010-2021</td>
-        </tr>
-            <tr>
-            <td>Университет</td>
-            <td>Студент</td>
-            <td>2021-сегодня</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h2>Связатся со мной</h2>
-    
-    <form action="/">
-
-        <div>
-            <label for="name"><strong> Ваше имя:</strong></label>
-            <input type="name" id="name" placeholder="Введите имя">
-        </div>
-    
-
-        <div>
-            <label for="email"><strong>Ваш email:</strong></label>
-            <input type="email" id="email" placeholder="Введите email">
+            <div class="info-text">
+                <h1>Максим Беспалый</h1>
+                
+                <p><span>Ученик</span> <a href="https://result.school/" target="_blank" class="RS">Result school</a></p>
+                
+                <p>Я люблю изучать языки, играть в игры, заниматься спортом, изучать что-то новое</p>
+                <!-- Social media -->
+                <div class="social">
+                    <h3>Список социальных сетей:</h3>
+                    
+                    <a href="https://www.instagram.com/fl0tii/" target="_blank" class="instagram "><img src="instagram.png" width="50" class="instagram"></a>
+                
+                    <a href="https://www.twitch.tv/fl0ti" target="_blank"  class="twitch"><img src="twitch.webp" width="50" class="twitch"></a>
+                    
+                    <h4>Intstagram ////
+                    Twitch</h4>
+            </div>
         </div>
 
-        <div>
-            <label for="message"><strong>Ваше сообщение:</strong></label>
-            <br>
-            <textarea type="message" id="message" placeholder="Введите сообщение. . ." cols="20" rows="5"></textarea>
+        </div>
+        <!-- Tables -->
+        <div class="card bg-aqua">
+            
+                <h2>Мои хобби</h2>
+                <ol class="list">
+                    <li>Фотография</li>
+                    <li>Музыка</li>
+                    <li>Игры</li>
+                    <li>Путешествия</li>
+                </ol>
+            
         </div>
 
-        <div>
-            <button type="submit">Отправить!</button>
+        <div class="card bg-yellow">
+            
+            <h2>Учёба</h2>
+            <table class="table">
+                <!-- <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead> -->
+                <tbody>
+                <tr>
+                    <td>Школа</td>
+                    <td>Ученик</td>
+                    <td>2010 - 2021</td>
+                </tr>
+                    <tr>
+                    <td>Университет</td>
+                    <td>Студент</td>
+                    <td>2021 - сейчас</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+            <!-- Contact me --> 
+            <form action="/" class="form">
 
-    </form>
+                <h2>Связатся со мной</h2>
+
+                <div class="form-raw">
+
+                    <div class="form-group">
+                        <label for="name"><strong> Ваше имя:</strong></label>
+                        <input type="name" id="name" placeholder="Введите имя">
+                    </div>
+                
+
+                    <div class="form-group">
+                        <label for="email"><strong>Ваш email:</strong></label>
+                        <input type="email" id="email" placeholder="Введите email" class="form-group">
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="message"><strong>Ваше сообщение:</strong></label>
+                    <textarea type="message" id="message" placeholder="Введите сообщение..." cols="20" rows="5" class="form-group"></textarea>
+                </div>
+
+                <div>
+                    <button type="submit" class="btn">Отправить!</button>
+                </div>
+        
+            </form>
+    </div>
 </body>
 </html>
